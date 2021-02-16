@@ -1,0 +1,21 @@
+body {
+    background-color: dimgrey;
+    margin: 0;
+}
+div{
+    position: relative;
+    box-sizing: border-box;
+}
+button{
+    box-sizing: border-box;
+    display: inline-block;
+    background: orange;
+    padding: inherit;
+    margin: inherit;
+    width: 30vw;
+    height: auto;
+    position: relative;
+}
+img{
+    width: 30vw;
+}
