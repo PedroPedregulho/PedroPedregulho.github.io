@@ -41,8 +41,9 @@ setInterval(function(){
     docex=parseInt(docex)
 },0)
 
-localStorage.setItem('sla',1)
-if(localStorage.getItem(sla)!=1){
+
+if(localStorage.getItem('sla')!=1){
     cookiex=0
     docex=0
 }
+localStorage.setItem('sla',1)
