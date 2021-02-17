@@ -6,13 +6,8 @@ var p=document.querySelectorAll('#aaa')
 var cookiex=localStorage.getItem('cookiex')
 var docex=localStorage.getItem('docex')
 
-if(isNaN(cookiex)=true) {
-    var cookiex=0
-    var docex=0
-}
-if(docex=null){
-    docex=0
-}
+
+
 
 //eventos
 cookie.addEventListener('mouseup',cookieadd)
@@ -22,7 +17,9 @@ doce.addEventListener('mouseup',doceadd)
 //funcoes 
 function cookieadd(){
  cookiex++
- cookiex+=parseInt(docex)
+ cookiex+=docex
+ console.log(cookiex)
+ 
 }
 function doceadd(){
     if (cookiex>=10) {
@@ -36,15 +33,16 @@ function doceadd(){
 
 //intervalos
 setInterval(function(){
-    p[0].innerHTML= parseInt(localStorage.getItem('cookiex'))
-    p[1].innerHTML=parseInt(localStorage.getItem('docex'))
+    p[0].innerHTML=cookiex
+    p[1].innerHTML=parseInt(docex)
     localStorage.cookiex=cookiex
     localStorage.docex=docex
-   
+    cookiex=parseInt(cookiex)
+    docex=parseInt(docex)
 },0)
 
-
-if(isNaN(cookiex)=true) {
-    var cookiex=0
-    var docex=0
+localStorage.setItem('sla',1)
+if(localStorage.getItem(sla)!=1){
+    cookiex=0
+    docex=0
 }
