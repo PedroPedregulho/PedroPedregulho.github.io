@@ -6,13 +6,9 @@ var p=document.querySelectorAll('#aaa')
 var cookiex=localStorage.getItem('cookiex')
 var docex=localStorage.getItem('docex')
 
-
-
-
 //eventos
 cookie.addEventListener('mouseup',cookieadd)
 doce.addEventListener('mouseup',doceadd)
-
 
 //funcoes 
 function cookieadd(){
@@ -40,6 +36,12 @@ setInterval(function(){
     cookiex=parseInt(cookiex)
     docex=parseInt(docex)
 },0)
+
+
+setInterval(function(){
+    localStorage.cookiex=cookiex
+    localStorage.docex=docex
+},500)
 
 
 if(localStorage.getItem('sla')!=1){
