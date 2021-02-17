@@ -6,6 +6,13 @@ var p=document.querySelectorAll('#aaa')
 var cookiex=localStorage.getItem('cookiex')
 var docex=localStorage.getItem('docex')
 
+if(isNaN(cookiex)=true) {
+    var cookiex=0
+    var docex=0
+}
+if(docex=null){
+    docex=0
+}
 
 //eventos
 cookie.addEventListener('mouseup',cookieadd)
@@ -37,3 +44,7 @@ setInterval(function(){
 },0)
 
 
+if(isNaN(cookiex)=true) {
+    var cookiex=0
+    var docex=0
+}
