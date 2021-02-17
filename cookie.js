@@ -43,7 +43,7 @@ setInterval(function(){
 
 
 if(localStorage.getItem('sla')!=1){
-    cookiex=0
-    docex=0
+    var cookiex=0
+    var docex=0
 }
 localStorage.setItem('sla',1)
