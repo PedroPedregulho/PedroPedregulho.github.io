@@ -1,31 +1,41 @@
 body {
     background-color: dimgrey;
     margin: 0;
-}
-div{
-    position: relative;
-    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+
 }
 .princ{
     box-sizing: border-box;
-    display: inline-block;
     background: orange;
-    padding: inherit;
-    margin: inherit;
-    width: 30vw;
-    height: auto;
+    padding: 0;
+    margin: 0;
+    width: 33.3%;
+    height: 45%;
+    border: 2px solid red;
     position: relative;
+    float: left;
+    overflow: hidden;
+    
 }
 img{
-    width: 30vw;
-}
-.mult{
-    display: inline-block;
-    width: 10%;
     box-sizing: border-box;
-    background: yellow;
+    width: 30vw;
+    height: 40vh;
+    padding: 15px 15px 0px 15px;
+    
 }
 p{
     font-size: 20px;
     font-weight: bolder;
+    margin: 0 auto;
+}   
+input{
+    text-align:center;
+   margin-left: 5vw;
+}
+#mult{
+    background:lightblue;
+    width: 100vw;
+    height: 100vh
 }

@@ -1,9 +1,6 @@
 //variaveis
 var cookies=document.querySelectorAll('.princ')
-var doce=document.querySelector('#doce')
 var p=document.querySelectorAll('#aaa')
-var cookiex=localStorage.getItem('cookiex')
-var docex=localStorage.getItem('docex')
 var x=document.querySelectorAll('input')
 
 
