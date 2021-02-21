@@ -7,6 +7,8 @@ var h3=document.querySelector('h3')
 var contador=0
 var maior=0
 
+
+
 maior=localStorage.maior
 sla.addEventListener('click',mover)
 slaa.addEventListener('click',alerta)
