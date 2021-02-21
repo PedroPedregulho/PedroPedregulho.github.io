@@ -21,7 +21,7 @@ h1{
     color: blue;
 }
 h3{
-    color:blueviolet;
+    color:rgb(37, 196, 85);
     position: absolute;
     top: 0;
     right: 30px;
@@ -29,4 +29,9 @@ h3{
 }
 h2{
     color:violet
+}
+button{
+    position: absolute;
+    bottom: 0px;
+    margin-left: 50vw
 }

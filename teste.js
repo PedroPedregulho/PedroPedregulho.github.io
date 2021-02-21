@@ -1,5 +1,6 @@
 var sla=document.querySelector('#aaa')
 var slaa=document.querySelector('#aa')
+var botao=document.querySelector('#reset')
 var h1=document.querySelector('h1')
 var h2=document.querySelector('h2')
 var h3=document.querySelector('h3')
@@ -9,7 +10,14 @@ var maior=0
 maior=localStorage.maior
 sla.addEventListener('click',mover)
 slaa.addEventListener('click',alerta)
+botao.addEventListener('click',resetar)
 
+
+function resetar(){
+    contador=0
+    sla.style.width=200+'px'
+    sla.style.height=200+'px'
+}
 function mover(){
     sla.style.left=Math.random()*500+1+ 'px'
     sla.style.top=Math.random()*500+1+ 'px'
@@ -39,3 +47,4 @@ if(localStorage.sla1!=1){
     var maior=0
 }
 localStorage.setItem('sla1',1)
+alert('Se estiver no celular jogue deitado xD')
