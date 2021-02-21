@@ -1,0 +1,32 @@
+#aaa{
+    width: 200px;
+    height: 200px;
+    background: fuchsia;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    border-radius: 50%;
+}
+body{
+    background: gray;
+    margin:0
+}
+
+#aa{
+    background: green;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    color: blue;
+}
+h3{
+    color:blueviolet;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 40px;
+}
+h2{
+    color:violet
+}
