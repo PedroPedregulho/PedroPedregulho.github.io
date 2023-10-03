@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .perfil {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .perfil img {
+            max-width: 100%;
+            height: auto;
+        }
+        .nome {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .informacoes {
+            margin-top: 20px;
+        }
+        .informacao {
+            margin-bottom: 10px;
+        }
+        .editar-botao {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .salvar-botao {
+            background-color: #28A745;
+        }
+        .upload-botao {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Meu Perfil</h1>
+    </div>
+    <div class="perfil">
+        <img id="fotoPerfil" src="imagem_do_perfil.jpg" alt="Minha Foto de Perfil">
+        <input type="file" id="uploadFoto" class="upload-botao" accept="image/*">
+        <button class="editar-botao" onclick="editarFotoPerfil()">Editar Foto</button>
+        <br>
+        <div class="nome">Seu Nome</div>
+        <input type="text" id="novoNome" class="upload-botao">
+        <button class="salvar-botao" onclick="salvarNome()">Salvar Nome</button>
+        <br>
+        <div class="informacoes">
+            <div class="informacao">
+                <strong>Email:</strong> <span id="email">seuemail@example.com</span>
+            </div>
+            <div class="informacao">
+                <strong>Data de Nascimento:</strong> <span id="dataNascimento">01 de janeiro de 1990</span>
+            </div>
+            <div class="informacao">
+                <strong>Cidade:</strong> <span id="cidade">Sua Cidade</span>
+            </div>
+            <!-- Adicione mais informações conforme necessário -->
+        </div>
+    </div>
+
+    <script>
+        // Função para editar a foto de perfil
+        function editarFotoPerfil() {
+            var uploadFoto = document.getElementById('uploadFoto');
+            uploadFoto.style.display = 'block';
+            uploadFoto.addEventListener('change', function() {
+                var fotoPerfil = document.getElementById('fotoPerfil');
+                var file = uploadFoto.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    fotoPerfil.src = e.target.result;
+                };
+
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // Função para salvar o nome editado
+        function salvarNome() {
+            var novoNome = document.getElementById('novoNome').value;
+            var nome = document.querySelector('.nome');
+            nome.textContent = novoNome;
+        }
+    </script>
+</body>
+</html>

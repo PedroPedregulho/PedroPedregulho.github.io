@@ -1,0 +1,107 @@
+body {
+    background-image: url(leao.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+h1{
+    color: rgb(0, 255, 162);
+}
+p{
+    color:rgba(255, 68, 0, 0.784);
+    margin-left: 100px;
+    font-size: 20px;
+}
+a{
+    font-size: 30px;
+    color: black;
+}
+.borda{
+    border: 0px solid black;
+    padding: 5px;
+    display: inline-block;
+    background-color: dimgray;
+    margin: -3px;
+}
+#pagina_login{
+    position: absolute;
+    border-top: 0cm;
+}
+.cursos{
+    border: 0px solid black;
+    padding: 5px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: dimgray;
+}
+#carga_horaria{ 
+    border: 0px solid black;
+    padding: 5px;
+    font-size: 20px;
+    display:flex;
+    background-color: dimgray;
+}
+#QTS{
+    border: 0px solid black;
+    padding: 0px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: rgb(142, 133, 133);
+    text-align: center;
+    width: 80%;
+    margin: 0;
+
+}
+.semana{
+    border: 4px solid red;
+    padding: 10px;
+    font-size: 40px;
+    display: inline-block;
+    background-color: dimgray;
+    margin-left: 30px;
+}
+.horario{
+    text-align: left;
+    border-bottom: 10px;
+}
+#horas{
+    border: 0px solid black;
+    padding: 0px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: rgb(142, 133, 133);
+    
+    width: 100%;
+    margin: 0;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Estilo para as células do cabeçalho */
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Estilo para as células de dados */
+td {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.intervalo{
+    background-color: red;
+}
+.livre{
+    background-color: aqua;
+}
+.fim_de_semana{
+    background-color: orange;
+}
+/* Estilo para linhas ímpares (opcional) */

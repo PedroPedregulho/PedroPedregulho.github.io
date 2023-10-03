@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">    
+    <title>Desafio Academico de Segurança Pública</title>
+    
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div id="carga_horaria">
+        <a href="carga_horaria_cfo.html">Consulte a carga horária</a>
+    </div>
+    <div id="QTS">
+        <a class="semana">Segunda</a>
+        <a class="semana">Terça</a>
+        <a class="semana">Quarta</a>
+        <a class="semana">Quinta</a>
+        <a class="semana">Sexta</a>
+        <a class="semana">Sabado</a>
+        <a class="semana">Domingo</a>
+    </div>
+    <div id="horas">
+        <br>
+        <a class="horario">7:30 - 8:20</a>
+        <br>
+        <a class="horario">8:20 - 9:10</a>
+        <br>
+        <a class="horario">9:30 - 10:20</a>
+        
+    </div>
+
+
+
+
+
+
+    <script>
+
+        var permissao = 0;
+        if (localStorage.getItem("permissao") == 'administrador'){
+
+            sla = document.getElementById('pagina_login')
+            
+
+            var texto = document.createTextNode('Logado como Administrador')    
+            
+
+            sla.parentNode.replaceChild(texto, sla)
+        }
+
+
+    </script>
+</body>

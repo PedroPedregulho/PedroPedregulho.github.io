@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">    
+    <title>Desafio Academico de Segurança Pública</title>
+    
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="borda">
+        <a href="login.html" id="pagina_login">Login</a>
+    </div>  
+    <div class="borda" >
+        <a href="cursos.html">
+            Cursos
+        </a>
+    </div>
+    <div>
+        <a href="perfil.html">
+            Perfil
+        </a>
+    </div>
+    <script>
+        function cursos() {
+            clique = 0
+            if(clique == 0){
+                clique++
+                var container = document.getElementById("container");
+                // Defina algum conteúdo para a nova div (opcional)
+                cursos = ['CFO','CFP','CSO']
+                for(let i = 0; i<cursos.length; i++) {
+                    var novaDiv = document.createElement("div");
+                    novaDiv.textContent = cursos[i];
+                    container.appendChild(novaDiv);
+                }
+            }
+            else {
+                container.removeChild(novaDiv)
+                clique = 0
+            }
+        }
+        var permissao = 0;
+        if (localStorage.getItem("permissao") == 'administrador'){
+
+            sla = document.getElementById('pagina_login')
+            
+
+            var texto = document.createTextNode('Logado como Administrador')    
+            
+
+            sla.parentNode.replaceChild(texto, sla)
+        }
+
+
+    </script>
+</body>
+</html>
