@@ -9,7 +9,7 @@
 </head>
 <body img src="APMG_PMPR.png" alt="sla">
     <div>
-        <div id="cabecalho">Equipe Mapogos - Aluno</div>
+        <div id="cabecalho">Equipe Mapogos - Gestor</div>
         <div id="cabecalho2"></div>
         <div class="menu">
             <a class="menu" href="gestao_main.html">
@@ -18,41 +18,37 @@
         </div>
         <br>
         <div class="menu">
-            <a href="">Calendário</a>
+            <a href="cursos.html">Cursos</a>
         </div>
         <br>
         <div class="menu">
-            <a class="menu" href="QTS.html">QTS</a>
+            <a class="menu" href="">Docentes</a>
         </div>
         <br>
         <div class="menu">
-            <a class="menu" href="disciplinas.html">
-            Disciplinas
+            <a class="menu" href="">
+                Discentes
             <a>
         </div>
         <br>
         <div class="menu">
-            <a href="historico_escolar.html">Histórico Escolar</a>
+            <a>Indicadores</a>
         </div>
         <br>
         <div class="menu">
-            <a href="https://docs.google.com/spreadsheets/d/1YONcoUHei4QchBT8QW8mhk2AInDoyn3jKW_-FqXJ7uY/edit#gid=1007208963">Carga Horária</a>
+            <a href="QTS_gestor.html">Marcação de aulas</a>
         </div>
         <br>
         <div class="menu">
-            <a href="">Requerimentos</a>
+            <a>Biblioteca</a>
         </div>
         <br>
         <div class="menu">
-            <a href="">Estágio</a>
+            <a>Forúm</a>
         </div>
         <br>
         <div class="menu">
-            <a href="">Biblioteca</a>
-        </div>
-        <br>
-        <div class="menu">
-            <a href="">Sair</a>
+            Sair
         </div>
         
         <table border="1">
@@ -70,24 +66,24 @@
             <!-- Linha 1 da Tabela -->
             <tr>
                 <td>7:30 - 8:20</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="marcado" onclick=desmarcar() id="alvo">DASP - Desmarcar</td>
+                <td class="marcado" onclick=desmarcar()>DASP - Desmarcar</td>
+                <td class="marcado" onclick=desmarcar()>DASP - Desmarcar</td>
+                <td class="marcado" onclick=desmarcar()>DASP - Desmarcar</td>
+                <td class="marcado" onclick=desmarcar()>DASP - Desmarcar</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <!-- Linha 2 da Tabela -->
             <tr>
                 <td>8:20 - 9:10</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
                 <td>9:10 - 9:30</td>
@@ -96,38 +92,38 @@
                 <td class="intervalo">Intervalo</td>
                 <td class="intervalo">Intervalo</td>
                 <td class="intervalo">Intervalo</td>
-                <td class="intervalo">Intervalo</td>
-                <td class="intervalo">Intervalo</td>
+                <td class="intervalo">------</td>
+                <td class="intervalo">------</td>
             </tr>
             <tr>
                 <td>9:30 - 10:20</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
                 <td>10:20 - 11:10</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
                 <td>11:10 - 12:00</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="marcado">DASP</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="marcado">DASP - Desmarcar</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
                 <td>12:00 - 13:30</td>
@@ -136,8 +132,8 @@
                 <td class="intervalo">Almoço</td>
                 <td class="intervalo">Almoço</td>
                 <td class="intervalo">Almoço</td>
-                <td class="intervalo">Almoço</td>
-                <td class="intervalo">Almoço</td>
+                <td class="intervalo">------</td>
+                <td class="intervalo">------</td>
             </tr>
             <tr>
                 <td>13:30 - 14:20</td>
@@ -146,8 +142,8 @@
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
                 <td>14:20 - 15:10</td>
@@ -156,8 +152,8 @@
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
                 <td>15:10 - 15:30</td>
@@ -166,8 +162,8 @@
                 <td class="intervalo">Intervalo</td>
                 <td class="intervalo">Intervalo</td>
                 <td class="intervalo">Intervalo</td>
-                <td class="intervalo">Intervalo</td>
-                <td class="intervalo">Intervalo</td>
+                <td class="intervalo">------</td>
+                <td class="intervalo">------</td>
             </tr>
             <tr>
                 <td>15:30 - 16:20</td>
@@ -176,8 +172,8 @@
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
                 <td>16:20 - 17:10</td>
@@ -186,8 +182,8 @@
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
                 <td>17:10 - 18:00</td>
@@ -196,10 +192,22 @@
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
                 <td class="livre">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
-                <td class="fim_de_semana">Clique para marcar aula</td>
+                <td class="fim_de_semana">------</td>
+                <td class="fim_de_semana">------</td>
             </tr>
             <tr>
     
             </tr>
+
+            <script>
+                function desmarcar(){
+                    prompt('Qual o motivo para desmarcar a aula?')
+                    var elemento = document.getElementById("alvo");
+                    
+                    // Modifica o texto do elemento
+                    elemento.textContent = "Clique para marcar aula";
+                }
+
+
+            </script>
 </body>

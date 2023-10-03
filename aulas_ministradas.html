@@ -42,11 +42,23 @@
         <div class="menu">
             Sair
         </div>
-        <div id="main">Sistema Akademus PMPR
+        <div id="aula">
+            <a>Aulas ministradas na disciplina de Ordem Unida</a>
         </div>
-        <div id="brasao">
-            <img src="PMPR_Brasao.png" alt="Minha Imagem">
+        <div id="botao">
+            <input type="text" id="meuInput">
+            <button onclick="exibirTexto()">Salvar</button>
+           
         </div>
+        <p id="textoSalvo"></p>
+    
+        <script>
+            function exibirTexto() {
+                // Captura o valor do input
+                var textoDigitado = document.getElementById("meuInput").value;
+    
+                // Exibe o texto digitado na tela
+                document.getElementById("textoSalvo").textContent = textoDigitado;
+            }
 
-
-</body>
+        </script>
